@@ -2,8 +2,12 @@ import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import siteLogo from "./photos/japanese-food.svg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './navbar.css';
+import { Link,NavLink } from "react-router-dom";
+import twitterLogo from "./photos/twitter.png";
+import instaLogo from "./photos/insta.png";
+import fbLogo from "./photos/facebook.png";
+import githubLogo from "./photos/github.png";
 
 const Navbar = () => {
   useEffect(() => {
@@ -15,46 +19,37 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="site-title">
-        <div className="title-icons">
-          <ul className="social-icons">
-            <li>
-              <div className="twitter-icon">
-                <FontAwesomeIcon icon="fa-brands fa-twitter" />
-              </div>
-            </li>
-            <li>
-              <div className="facebook-icon">
-                <FontAwesomeIcon icon="fa-brands fa-facebook-f" />
-              </div>
-            </li>
-            <li>
-              <div className="instagram-icon">
-                <FontAwesomeIcon icon="fa-brands fa-instagram" />
-              </div>
-            </li>
-            <li>
-              <div className="github-icon">
-                <FontAwesomeIcon icon="fa-brands fa-github" />
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div className="site-contact">
-          <img src="./src/phone.png" alt="" />
-          <p>(414)-857-0107</p>
-          <img src="./src/mail.png" alt="" />
-          <p>yummy@bistrobliss</p>
-        </div>
-      </div>
+      <div className="head">
+  <div className="icon">
+    <NavLink href="">
+      <img src={twitterLogo} alt="" />
+    </NavLink>
+    <NavLink href="">
+      <img src={fbLogo} alt="" />
+    </NavLink>
+    <NavLink href="">
+      <img src={instaLogo} alt="" />
+    </NavLink>
+    <NavLink href="">
+      <img src={githubLogo} alt="" />
+    </NavLink>
+  </div>
+  <div className="contact">
+    <img src="./src/phone.png" alt="" />
+    <p>(414)-857-0107</p>
+    <img src="./src/mail.png" alt="" />
+    <p>yummy@bistrobliss</p>
+  </div>
+</div>
+
 
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container">
           <img src={siteLogo}/>
 
-          <a className="navbar-brand" href="/#">
+          <Link className="navbar-brand" to="/">
             <b>Bistro Bliss</b>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -69,30 +64,30 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/#">
+                <NavLink className="nav-link active" exact to="/">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/#">
+                <NavLink className="nav-link active"  to="/about">
                   About
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/#">
+                <NavLink className="nav-link active"  to="/menu">
                   Menu
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/#">
+                <NavLink className="nav-link active"  to="/blog">
                   Pages
-                </a>
+                </NavLink>
               </li>
 
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/#">
+                <NavLink className="nav-link active"  to="/contact">
                   Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
             <form className="d-flex" role="search">
