@@ -1,0 +1,19 @@
+.footer-container {
+  width: 1800px;
+  height: 778px;
+}
+
+.footer-section {
+  width: 1296px;
+  height: 573px;
+  padding-top: 100px;
+  padding-left: 40px;
+}
+
+h6 {
+  font-size: 16;
+}
+
+.text-white {
+  text-decoration: none;
+}

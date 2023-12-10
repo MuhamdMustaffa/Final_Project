@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  width: 1800px;
+  height: 129px;
+}
+
+.navbar-nav {
+margin-right: 21%;
+}
+
+.btn {
+  width: 147px;
+  height: 48px;
+  border-radius: 118px;
+}
+
+.navbar-brand {
+  width: 211px;
+  height: 30px;
+  font-size: 42.67px;
+  color: #474747;
+  font-family: cuisine;
+  font-style: italic;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.nav-item {
+width: 45px;
+height: 24px;
+font-family: sans-serif;
+margin: 20px;
+}
+
+.nav-item a:hover {
+  width: 77px;
+height: 32px;
+padding-bottom: 4px;
+  background-color: #DBDFD0;
+  border-radius: 34px;
+  text-align: center;
+}
+
+.site-title {
+  color: white;
+  text-align: end;
+  width: 1800px;
+  height: 45px;
+  background-color: #474747;
+}
+.site-title p {
+  display: inline;
+  padding-right: 10px;
+}
+.title-icons {
+  position: relative;
+  margin-right: 100px;
+}
+.site-contact {
+  position: absolute;
+  top: -0.1rem;
+  margin: 0px 100px;
+}
+.site-contact img {
+  top: 10px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  box-sizing: border-box;
+}
+
