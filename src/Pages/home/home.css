@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Playfair+Display:wght@600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li,
+a,
+button {
+  font-style: DM Sans;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #2c2f24;
+}
+button {
+  transition: all 0.3s ease 0s;
+}
+button:hover {
+  color: #6b5f57;
+}
+.head {
+  color: white;
+  text-align: end;
+  width: 100%;
+  background-color: #474747;
+}
+.head p {
+  display: inline;
+  padding-right: 10px;
+}
+.icon {
+  position: relative;
+  margin-right: 100px;
+}
+.contact {
+  position: absolute;
+  top: -0.1rem;
+  margin: 0px 100px;
+}
+.contact img {
+  top: 10px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+.logo {
+  display: flex;
+}
+.logo h1 {
+  font-family: Playfair Display;
+  font-weight: 600;
+  font-size: 42.667px;
+  font-style: italic;
+}
+.logo img {
+  width: 56px;
+  height: 55px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+  font-size: 16px;
+  text-decoration: none;
+}
+.nav_links li a:hover {
+  color: #6d6d6d;
+}
+.home_nav {
+  border-radius: 34px;
+  background-color: #dbdfd0;
+  padding: 8px;
+}
+header button {
+  padding: 12px 24px;
+  border-radius: 118px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border: solid black;
+}
+header button:hover {
+  color: #6b5f57;
+}
+
+main img {
+  position: relative;
+
+  width: 100%;
+}
+.main_content {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.main_content h1 {
+  font-family: Playfair Display;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96px;
+  display: block;
+}
+.main_content p {
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.main_content button {
+  margin: 40px;
+  padding: 20px 32px;
+  border-radius: 118px;
+  border: solid black;
+}
+.main_btn {
+  color: white;
+  background-color: #ad343e;
+  border: solid black;
+  transition: all 0.3s ease 0s;
+}
+section h1 {
+  text-align: center;
+  margin: 50px;
+  font-family: Playfair Display;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60.5px;
+}
+section .container {
+  display: flex;
+  justify-content: center;
+}
+.section_content {
+  width: 306px;
+
+  margin: 10px;
+  border: 2px solid #dbdfd0;
+  border-radius: 5px;
+}
+.section_icon {
+  text-align: center;
+  margin: 40px 0px 30px 0px;
+}
+.section_icon img {
+  padding: 10px;
+  height: 100px;
+}
+.section_content h3 {
+  padding: 10px;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.72px;
+  text-align: center;
+}
+.section_content p {
+  padding: 10px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+.section_content a {
+  padding: 15px 20px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ad343e;
+  display: block;
+  text-align: center;
+}
+.section2 .parent {
+  padding: 120px 152px;
+  display: flex;
+  gap: 90px;
+  background-color: #f9f9f7;
+  position: absolute;
+
+  margin-left: 8.4rem;
+}
+.section2 {
+  margin: 100px 0px;
+}
+
+.section2_about {
+  text-align: start;
+  width: 557px;
+  height: 400px;
+  position: relative;
+  bottom: -30px;
+  margin-left: 20px;
+}
+.section2_about h2 {
+  font-family: Playfair Display;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60.5px;
+  color: #2c2f24;
+}
+.section2_p1 {
+  font-family: DM Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  color: #2c2f24;
+  margin: 24px 0px;
+}
+.section2_p2 {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.section2_about button {
+  border-radius: 118px;
+
+  padding: 20px 32px;
+}
+.come_visit {
+  height: 321px;
+  width: 411px;
+  position: absolute;
+  background-color: #474747;
+  bottom: 80px;
+  left: 400px;
+  border-radius: 12px;
+}
+.come_visit {
+  padding: 50px;
+}
+
+.come_visitP h3 {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.72px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.come_visitP p {
+  display: inline;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #f9f9f7;
+}
+.come_visitP img {
+  margin-right: 10px;
+}
+.come_visitP div {
+  margin: 20px 0px;
+}
+.us_p {
+  position: absolute;
+}
+
+.homeBody {
+  margin-bottom: 49rem;
+}
